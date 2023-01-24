@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Roboto Mono' ;
+}
+body{
+    width: 100%;
+    height: auto;
+    background-color: #E5E5E5;
+}
+/* navbar */
+nav{
+    width: 100%;
+    height: auto;
+    padding: 0 5%;
+}
+.navheader{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0px;
+}
+.selecGroup{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.lincGroup{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.lincGroup a{
+    display: flex;
+    align-items: center;
+    color: grey;
+}
+.lincGroup a svg{
+    color: rgb(55, 53, 53) ;
+}
+/* /// */
+.navbody{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0px;
+    position: relative;
+}
+.Logo{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 20px;
+}
+.navbody > ul{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbody > ul   a{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #262626;
+    transition: all 0.15s ease-in-out;
+}
+.navbody > ul a:hover{
+    color: #40BFFF;
+}
+.navbody > ul a.active{
+    color: #40BFFF;
+}
+.homeLink{
+    position: relative;
+}
+.homeLink:hover .hoverCard {
+      opacity: 1;
+      z-index: 55;
+}
+.hoverCard{
+    position: absolute;
+    top:40px;
+    left: -150px;
+    width: 50vw;
+    height: auto;
+    background-color:#FFFFFF;
+    opacity: 0;
+    z-index: -55;
+    transition: all 0.3s ease-out;
+}
+.HovercardContent{
+    width: 100%;
+    height: 100%;
+    position: relative;
+     padding: 30px;
+}
+.mgposition{
+    position: absolute;
+    top: -10px;
+    left: 15%;
+}
+.hoverCardHead{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.hoverCardHead h4{
+    color: grey;
+}
+.hoverCardBody  {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    gap: 25px;
+}
+.hoverCardBody ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.hoverCardBody ul a {
+   font-size: 17px;
+}
+
+
+.home{
+    width: 100%;
+    height: 100vh;
+}
